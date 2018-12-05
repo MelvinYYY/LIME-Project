@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="price_pr <= 0.9\nmse = 120.4\nsamples = 5482\nvalue = 9.9"] ;
+1 [label="price <= 3.3\nmse = 77.2\nsamples = 4177\nvalue = 8.1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="OTHER_BRAND <= 0.5\nmse = 108.9\nsamples = 1461\nvalue = 10.2"] ;
+1 -> 2 ;
+3 [label="mse = 127.4\nsamples = 675\nvalue = 11.8"] ;
+2 -> 3 ;
+4 [label="mse = 88.2\nsamples = 786\nvalue = 8.7"] ;
+2 -> 4 ;
+5 [label="WHOLE GRAIN OAT <= 0.5\nmse = 57.2\nsamples = 2716\nvalue = 7.1"] ;
+1 -> 5 ;
+6 [label="mse = 39.7\nsamples = 2327\nvalue = 6.3"] ;
+5 -> 6 ;
+7 [label="mse = 133.8\nsamples = 389\nvalue = 11.3"] ;
+5 -> 7 ;
+8 [label="Display_0 <= 0.5\nmse = 213.9\nsamples = 1305\nvalue = 15.7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="price_pr <= 2.6\nmse = 334.1\nsamples = 167\nvalue = 27.8"] ;
+8 -> 9 ;
+10 [label="mse = 360.0\nsamples = 94\nvalue = 33.8"] ;
+9 -> 10 ;
+11 [label="mse = 203.3\nsamples = 73\nvalue = 20.4"] ;
+9 -> 11 ;
+12 [label="price <= 3.0\nmse = 170.4\nsamples = 1138\nvalue = 13.8"] ;
+8 -> 12 ;
+13 [label="mse = 213.2\nsamples = 652\nvalue = 16.4"] ;
+12 -> 13 ;
+14 [label="mse = 89.6\nsamples = 486\nvalue = 10.2"] ;
+12 -> 14 ;
+}
